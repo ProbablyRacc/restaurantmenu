@@ -7,7 +7,8 @@ html{
 }
 nav {font-family: sans-serif; font-size: 10px;}
 
-#main {width: 900px; margin: 10px auto;}
+main {
+  columns: 420px 2; column-gap: 60px;}
 /* Use the 'Bungee Inline' font at 46px and lighter weight for the restaurant name. */
 h1{
     font-family: 'Bungee Inline';
@@ -15,10 +16,7 @@ h1{
     font-weight: lighter;
 }
 
-main {
-columns: 420px; 
-column-gap: 60px;
-}
+
 section {margin-bottom: 20px; padding: 10px;}
 
 /* Show each of the section headings of the menu (e.g. "Starters") in uppercase. */
@@ -46,13 +44,9 @@ dd::after {content: " "; display: block; clear: both; margin-bottom: 15px;}
 .price {float: right; padding: 0 0 35px 20px;}
 
 /* Right-align the text of the address/footer */
-#footer, #address{
-    text-align: right;
-}
-
+#footer,address{text-align: right;}
 /* draw a 2px thick black border around the starters and desserts sections of the menu */
 #starters, #desserts{
     border-width: 2px;
     border-style: solid;
     border-color: black;
-    
